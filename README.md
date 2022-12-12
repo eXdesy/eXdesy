@@ -2,7 +2,7 @@
 
 Todavia esta desierto aqui, pero pronto vienen cosas interantes. Paciencia es todo!
 
-![eXdesy](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![eXdesy](https://github.com/eXdesy/eXdesy/blob/main/Banner_eXdesy.png)
 
 ## My skill:
 [![Java](https://img.shields.io/badge/Java-FA7343?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
