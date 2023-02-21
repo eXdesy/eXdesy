@@ -1,6 +1,6 @@
-# Hola, soy Exdesy 👽
+# Hi, i'm eXdesy 👽
 
-Todavia esta desierto aqui, pero pronto vienen cosas interantes. Paciencia es todo!
+It's still deserted here, but interesting things are coming soon. Patience is everything!
 
 ![eXdesy](https://github.com/eXdesy/eXdesy/blob/main/Banner_eXdesy.png)
 
