@@ -1,6 +1,6 @@
 # Hi, i'm eXdesy 👽
 
-![eXdesy](https://github.com/eXdesy/Web/blob/main/eXdesy/img/banner.png)
+![eXdesy](https://github.com/eXdesy/eXdesy/blob/main/img/banner.png)
 
 ## Ui & Ux Designer
 Mi objetivo principal es crear diseños digitales adorables, centrándome en la experiencia del usuario. Con mi experiencia y habilidades en diseño, investigación y pruebas de usuario, estoy preparado para enfrentar cualquier proyecto de diseño digital con éxito.
