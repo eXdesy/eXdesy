@@ -1,0 +1,190 @@
+@import url('https://unpkg.com/normalize.css') layer(normalize);
+
+@layer normalize, style, effect, srollbar, debug;
+
+@layer debug {
+  [data-debug='true'] li {
+    outline: 0.05em dashed currentColor;
+  }
+  [data-debug='true'] :is(h2, li:last-of-type) {
+    outline: 0.05em dashed canvasText;
+  }
+}
+
+@layer scrollbar {
+  @property --hue {
+    initial-value: 0;
+    syntax: '<number>';
+    inherits: false;
+  }
+  @property --chroma {
+    initial-value: 0;
+    syntax: '<number>';
+    inherits: true;
+  }
+  [data-sync-scrollbar='true'] {
+    scrollbar-color: oklch(var(--lightness) var(--chroma) var(--hue)) var(--black-color);
+  }
+  @supports (animation-timeline: scroll()) and (animation-range: 0% 100%) {
+    [data-sync-scrollbar='true'][data-animate='true'] {
+      timeline-scope: --list;
+      scrollbar-color: oklch(var(--lightness) var(--chroma, 0) var(--hue)) var(--black-color);
+      animation-name: change, chroma-on, chroma-off;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-range: entry 50% exit 50%, entry 40% entry 50%,
+        exit 30% exit 40%;
+      animation-timeline: --list;
+      ul {
+        view-timeline: --list;
+      }
+    }
+  }
+  @keyframes change {
+    to {
+      --hue: var(--end);
+    }
+  }
+  @keyframes chroma-on {
+    to {
+      --chroma: 0.3;
+    }
+  }
+  @keyframes chroma-off {
+    to {
+      --chroma: 0;
+    }
+  }
+}
+
+@layer effect {
+  :root {
+    --start: 0;
+    --end: 360;
+    --lightness: 65%;
+    --base-chroma: 0.3;
+  }
+  [data-theme='dark'] {
+    --lightness: 75%;
+  }
+  [data-theme='light'] {
+    --lightness: 65%;
+  }
+  .scroll ul {
+    --step: calc((var(--end) - var(--start)) / (var(--count) - 1));
+  }
+  .scroll li:not(:last-of-type) {
+    color: oklch(
+      var(--lightness) var(--base-chroma)
+        calc(var(--start) + (var(--step) * var(--i)))
+    );
+  }
+  @supports (animation-timeline: scroll()) and (animation-range: 0% 100%) {
+    [data-animate='true'] {
+      .scroll li {
+        opacity: 0.1;
+        animation-name: brighten;
+        &:first-of-type {
+          --start-opacity: 1;
+        }
+        &:last-of-type {
+          --brightness: 1;
+          --end-opacity: 1;
+        }
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        animation-range: cover calc(50% - 1lh) calc(50% + 1lh);
+        animation-timeline: view();
+      }
+    }
+    @keyframes brighten {
+      0% {
+        opacity: var(--start-opacity, 0.1);
+      }
+      50% {
+        opacity: 1;
+        filter: brightness(var(--brightness, 1.2));
+      }
+      100% {
+        opacity: var(--end-opacity, 0.1);
+      }
+    }
+  }
+}
+
+@layer style {
+	:root {
+		--font-size-min: 14;
+		--font-size-max: 20;
+		--font-ratio-min: 1.1;
+		--font-ratio-max: 1.33;
+		--font-width-min: 375;
+		--font-width-max: 1500;
+	}
+	.scroller {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	:where(.fluid) {
+		--fluid-min: calc(
+			var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0))
+		);
+		--fluid-max: calc(
+			var(--font-size-max) * pow(var(--font-ratio-max), var(--font-level, 0))
+		);
+		--fluid-preferred: calc(
+			(var(--fluid-max) - var(--fluid-min)) /
+				(var(--font-width-max) - var(--font-width-min))
+		);
+		--fluid-type: clamp(
+			(var(--fluid-min) / 16) * 1rem,
+			((var(--fluid-min) / 16) * 1rem) -
+				(((var(--fluid-preferred) * var(--font-width-min)) / 16) * 1rem) +
+				(var(--fluid-preferred) * var(--variable-unit, 100vi)),
+			(var(--fluid-max) / 16) * 1rem
+		);
+		font-size: var(--fluid-type);
+	}
+	.scroll {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+	}
+	section:first-of-type {
+		--font-level: 6;
+		display: flex;
+		width: 100%;
+	}
+	section:first-of-type h2 {
+		position: sticky;
+		top: calc(50% - 0.5lh);
+		font-size: inherit;
+		margin: 0;
+		display: inline-block;
+		height: fit-content;
+		font-weight: 600;
+	}
+	section:last-of-type {
+		min-height: 100vh;
+		display: flex;
+		place-items: center;
+		width: 100%;
+		justify-content: center;
+	}
+	section h2, li:last-of-type {
+		--font-level: 6;
+		color: var(--white-color);
+	}
+	section ul {
+		font-weight: 600;
+		padding-inline: 0;
+		margin: 0;
+	}
+	[data-snap='true'] {
+		scroll-snap-type: y proximity;
+		li {
+			scroll-snap-align: center;
+		}
+	}
+}

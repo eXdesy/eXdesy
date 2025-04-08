@@ -1,0 +1,37 @@
+<opinions>
+  <opinion>
+    <name>Name 1</name>
+    <role>Cool Role</role>
+    <photo>img/people/people1.png</photo>
+		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
+		<link>https://www.linkedin.com/in/dilior-mukhiddinov-45758a2aa</link>
+  </opinion>
+  <opinion>
+    <name>Name 2</name>
+    <role>Cool Role</role>
+    <photo>img/people/people2.png</photo>
+		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
+		<link>https://www.linkedin.com/in/dilior-mukhiddinov-45758a2aa</link>
+  </opinion>
+  <opinion>
+    <name>Name 3</name>
+    <role>Cool Role</role>
+    <photo>img/people/people3.png</photo>
+		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
+		<link>https://www.linkedin.com/in/dilior-mukhiddinov-45758a2aa</link>
+  </opinion>
+  <opinion>
+    <name>Name 4</name>
+    <role>Cool Role</role>
+    <photo>img/people/people4.png</photo>
+		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
+		<link>https://www.linkedin.com/in/dilior-mukhiddinov-45758a2aa</link>
+  </opinion>
+  <opinion>
+    <name>Name 5</name>
+    <role>Cool Role</role>
+    <photo>img/people/people5.png</photo>
+		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
+		<link>https://www.linkedin.com/in/dilior-mukhiddinov-45758a2aa</link>
+  </opinion>
+</opinions>

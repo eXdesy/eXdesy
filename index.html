@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Future from the past">
+	<meta name="keyword" content="eXdesy, About me">
+	<meta name="lenguage" content="ES">
+	<meta name="author" content="exdesy.design@gmail.com">
+	<meta name="robots" content="index.follow">
+	<meta name="revised" content="Monday, March, 06, 2023, 19:03">
+	<meta name="vierport" content="width=device=width, initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+	<meta http-equiv="refresh" content="300; URL=index.html">
+
+	<title>eXdesy</title>
+	<link rel="shortcut icon" href="img/logo.ico">
+  <!-- ------------------------------  LIBRARY  ------------------------------ -->	
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ------------------------------  STYLES  ------------------------------ -->
+	<link href="css/scroll-colors-style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/menu-container-style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<script type="module" src="js/scroll-colors.js"></script>
+	<script type="module" src="js/main-container.js"></script>
+	<script type="module" src="js/nav-container.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<nav>
+					<div class="nav-menu">
+						<a href="index.html">eXdesy</a></li>
+						<div class="nav-menu-wrapper">
+							<button id="temaToggle" class="theme-toggle-button">☀️</button>
+							<button class="nav-menu-wrapper-button">
+								<div class="nav-menu-wrapper-button-text">LETS TALK ;)</div>
+								<div class="nav-menu-wrapper-button-letters">
+									<span>L</span>
+									<span>E</span>
+									<span>T</span>
+									<span>S</span>
+									<span>&nbsp;</span>
+									<span>T</span>
+									<span>A</span>
+									<span>L</span>
+									<span>K</span>
+								</div>
+							</button>
+							<div class="nav-menu-wrapper-toggle" id="navMenuWrapperToggle">
+								<span class="nav-menu-wrapper-toggle-bar top"></span>
+								<span class="nav-menu-wrapper-toggle-bar middle"></span>
+								<span class="nav-menu-wrapper-toggle-bar bottom"></span>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="nav-menu-content">
+					<ul class="nav-menu-content-list">
+						<li>
+							<a href="#home">
+								<span class="nav-menu-content-list-left">
+									<span class="nav-menu-content-list-left-text">Home</span>
+									<span class="nav-menu-content-list-left-index">(01)</span>
+								</span>
+								<span class="nav-menu-content-list-arrow">→</span>
+							</a>
+						</li>
+						<li>
+							<a href="#aboutMe">
+								<span class="nav-menu-content-list-left">
+									<span class="nav-menu-content-list-left-text">About Me</span>
+									<span class="nav-menu-content-list-left-index">(02)</span>
+								</span>
+								<span class="nav-menu-content-list-arrow">→</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works">
+								<span class="nav-menu-content-list-left">
+									<span class="nav-menu-content-list-left-text">Works</span>
+									<span class="nav-menu-content-list-left-index">(03)</span>
+								</span>
+								<span class="nav-menu-content-list-arrow">→</span>
+							</a>
+						</li>
+						<li>
+							<a href="#insights">
+								<span class="nav-menu-content-list-left">
+									<span class="nav-menu-content-list-left-text">Insights</span>
+									<span class="nav-menu-content-list-left-index">(04)</span>
+								</span>
+								<span class="nav-menu-content-list-arrow">→</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-menu-content-overlay"></div>
+			</header>
+			<main>
+				<div class="home" id="home">
+					<div class="home-title">
+						<h1 class="home-title-text">eXdesy</h1>
+						<h2 class="home-title-subtext">Future from the past</h2>
+					</div>
+					<div class="home-photo">
+						<img src="img/hero.PNG" alt="Main photo 1">
+					</div>
+				</div>
+				<div class="aboutMe" id="aboutMe">
+					<div class="aboutMe-title">
+						<h2>About Me.</h2>
+						<span class="aboutMe-title-index">(02)</span>
+					</div>
+					<div class="aboutMe-content"></div>
+				</div>
+				<div class="logos">
+				</div>
+				<div class="awards">
+					<div class="awards-title">
+						<h2>Awards & Studies.</h2>
+						<div class="awards-title-photo">
+							<img src="img/hero2.PNG" alt="Main photo 2">
+						</div>	
+					</div>
+					<div class="awards-content"></div>
+				</div>
+				<div class="works" id="works">
+					<div class="works-title">
+						<div class="works-title-left">
+							<h2>Selected Works.</h2>
+							<span class="works-title-index">(03)</span>	
+						</div>
+						<a href="https://github.com/eXdesy" class="works-title-arrow">View All Works →</a>
+					</div>
+					<div class="works-content"></div>
+				</div>
+				<div class="opinions">
+					<div class="opinion-quote" id="opinionQuote"></div>
+					<div class="opinions-slider" id="opinionsSlider"></div>
+				</div>
+				<div class="insights" id="insights">
+					<div class="insights-title">
+						<div class="insights-title-left">
+							<h2>Insights.</h2>
+							<span class="insights-title-index">(04)</span>	
+						</div>
+						<a href="https://github.com/eXdesy" class="insights-title-arrow">View All Insights →</a>
+					</div>
+					<div class="insights-content"></div>
+				</div>
+				<div class="scroller">
+					<section class="scroll fluid">
+						<h2>eXdesy can&nbsp;</h2>
+						<ul style="--count: 10">
+							<li style="--i: 0">prompt.</li>
+							<li style="--i: 1">solve.</li>
+							<li style="--i: 2">design.</li>
+							<li style="--i: 3">develop.</li>
+							<li style="--i: 4">debug.</li>
+							<li style="--i: 5">optimize.</li>
+							<li style="--i: 6">create.</li>
+							<li style="--i: 7">innovate.</li>
+							<li style="--i: 8">inspire.</li>
+							<li style="--i: 9">do it.</li>
+						</ul>
+					</section>
+					<section>
+						<h2 class="fluid">Contact :)</h2>
+					</section>
+				</div>
+			</main>
+			<footer>
+				<div class="footer" id="footer">
+					<ul>
+						<h2>Network</h2>
+						<a href="https://www.instagram.com/exdesy.design/"><img src="../img/instagram.png" alt="Instagram"> Instagram</p></a>
+						<a href="https://github.com/eXdesy"><img src="../img/github.png" alt="GiHub"> GiHub</p></a>
+						<a href="https://www.behance.net/exdesydesign"><img src="../img/behance.png" alt="Behance"> Behance</p></a>
+					</ul>
+					<ul>
+						<h2>Contact</h2>
+						<a href="mailto:exdesy.design@gmail.com"><p>exdesy.design@gmail.com</p></a>
+					</ul>
+				</div>
+				<div class="copyright"><a href="index.html">© eXdesy</a></div>
+			</footer>
+		</div>
+	</div>
+	</body>
+</html>
