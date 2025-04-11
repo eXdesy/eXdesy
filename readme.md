@@ -22,9 +22,7 @@ I write clean, scalable, and modular code, keeping things maintainable and effic
 ---
 
 ## 🎬 Adobe Guy  
-Photoshop and Premiere Pro are my creative weapons of choice.  
-I edit visuals with intention — **clean, crisp, and cinematic**.  
-Whether it’s a product showcase, short clip, or aesthetic visual – I got you.
+Photoshop and Premiere Pro are my creative weapons of choice. I edit visuals with intention clean, crisp, and cinematic. Whether it’s a product showcase, short clip, or aesthetic visual.
 
 ---
 
