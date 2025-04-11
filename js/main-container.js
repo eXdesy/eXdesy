@@ -103,8 +103,8 @@ function createAwardsStudiesBlock(title, description, link) {
 	textDiv.className = "awards-content-description";
 	const descDiv = document.createElement("div");
 	descDiv.className = "awards-content-description-text";
-	const h2 = document.createElement("h2");
-	h2.textContent = title;
+	const h3 = document.createElement("h3");
+	h3.textContent = title;
 	const p = document.createElement("p");
 	p.textContent = description;
 	const button = document.createElement("button");
@@ -114,7 +114,7 @@ function createAwardsStudiesBlock(title, description, link) {
 		window.open(link);
 	};
 
-	descDiv.appendChild(h2);
+	descDiv.appendChild(h3);
 	descDiv.appendChild(p);
 	textDiv.appendChild(descDiv);
 	textDiv.appendChild(button);

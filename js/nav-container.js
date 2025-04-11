@@ -106,3 +106,30 @@ $('.nav-menu-content-list li a').on('click', () => {
     tl.reverse();
   }
 });
+
+const themeToggleBtn = document.getElementById("temaToggle");
+let isDark = true;
+themeToggleBtn.addEventListener("click", () => {
+  const root = document.documentElement;
+  if (isDark) {
+		document.body.style.backgroundImage = "url('img/bgWhite.png')";
+		root.style.setProperty('--white-color', '#2d2d2d');
+    root.style.setProperty('--black-color', '#e7e7e0');
+    root.style.setProperty('--invert-color', 'brightness(0) invert(0)');
+    themeToggleBtn.textContent = '🌙';
+  } else {
+		document.body.style.backgroundImage = "url('img/bg.png')";
+		root.style.setProperty('--white-color', '#e7e7e0');
+    root.style.setProperty('--black-color', '#2d2d2d');
+    root.style.setProperty('--invert-color', 'brightness(0) invert(1)');
+    themeToggleBtn.textContent = '☀️';
+  }
+  isDark = !isDark;
+});
+
+function scrollToTalk() {
+  const el = document.getElementById('talk');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}

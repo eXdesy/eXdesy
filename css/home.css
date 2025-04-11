@@ -1,0 +1,114 @@
+.home {
+	display: flex;
+	flex-direction: row;
+	color: inherit;
+
+	min-height: 100vh;
+	width: 100%;
+	line-height: 1;
+	font-size: var(--font-size);
+}
+.home-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	
+	padding-inline: var(--padding-size);
+}
+.home-title h1 {
+	font-size: 8em;
+}
+.home-title h2 {
+	font-size: 3em;
+}
+.home-photo {
+	position: absolute;
+	will-change: transform;
+	z-index: -1;
+
+	left: 55vw;
+	top: 10vh;
+	max-width: calc(var(--index) * 25);
+}
+.home-photo img {
+	mask-image: linear-gradient(to bottom, var(--black-color) 50%, transparent 75%);
+	-webkit-mask-image: linear-gradient(to bottom, var(--black-color) 50%, transparent 75%);
+
+	width: 100%;
+	height: auto;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--white-color);
+
+  gap: 20px;
+  width: 100%;
+  padding: calc(var(--index) * 2);
+  border-radius: 25px;
+  box-shadow: 0 30px 30px -30px var(--grey-color);
+}
+.form .title {
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+
+	font-size: 2em;
+}
+.form input {
+  border: 2px solid var(--grey-color);
+  outline: 0;
+
+	padding-inline: calc(var(--index) * 1);
+	border-radius: 15px;
+  width: 100%;
+  height: 50px;
+}
+.form textarea {	
+  border: 2px solid var(--grey-color);
+	outline: 0;
+	resize: none;
+
+	padding: calc(var(--index) * 1);
+	border-radius: 15px;
+  width: 100%;
+	height: 40vh;
+}
+.form button {
+	background-color: var(--black-color);
+  color: var(--white-color);
+  cursor: pointer;
+	transform: var(--transform-scale);
+  font-weight: 600;
+
+	width: 100%;
+	border-radius: 15px;
+	font-size: 1em;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+}
+
+
+
+@media (max-width: 1080px) {
+	.home-title {
+		padding-inline: calc(var(--padding-size) / 2);
+	}
+  .home-photo {
+		left: 45vw;
+		top: 15vh;
+	}
+}
+@media (max-width: 480px) {
+  .home-photo {
+		left: 35vw;
+		top: 15vh;
+	}
+}

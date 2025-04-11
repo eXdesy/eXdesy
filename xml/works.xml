@@ -1,20 +1,20 @@
 <works>
     <work>
-			<title>Title 1</title>
-			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
-			<link>https://github.com/eXdesy</link>
+			<title>Speech Aligner System</title>
+			<description>Comprehensive System for Automatic Speech Recognition and Forced Alignment (ASR-FA). A versatile tool designed for accurate speech-to-text transcription, alignment, and correction using advanced algorithms and models. It utilizes advanced speech-to-text transcription methods and text normalization techniques to compare transcribed and expected text, identifying discrepancies and storing results for further analysis.</description>
+			<link>https://github.com/eXdesy/SpeechAligner</link>
 			<photo>img/work/work1.jpg</photo>
     </work>
     <work>
-			<title>Title 2</title>
-			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
-			<link>https://github.com/eXdesy</link>
+			<title>Deepway</title>
+			<description>An advanced Telegram bot that helps users connect with new people, discover Telegram channels and groups, and buy access to exclusive content. Inspired by popular friend-matching bots, but enhanced with group discovery and monetization features.</description>
+			<link>https://github.com/eXdesy/DeepWay</link>
 			<photo>img/work/work2.jpg</photo>
     </work>
 		<work>
-			<title>Title 3</title>
-			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
-			<link>https://github.com/eXdesy</link>
+			<title>UDP Server - Client</title>
+			<description>This project is JavaFX-based server that uses the UDP protocol to receive messages and images between different clients and forward them.</description>
+			<link>https://github.com/eXdesy/UDPServerClient</link>
 			<photo>img/work/work3.jpg</photo>
     </work>
 </works>
