@@ -1,28 +1,4 @@
-/* IMAGE SCROLLER */
-window.addEventListener('load', () => {
-  const photo = document.querySelector('.home-photo');
-  const aboutMe = document.querySelector('.aboutMe');
-  if (photo && aboutMe) {
-    gsap.to(photo, {
-      y: () => {
-        const photoTop = photo.getBoundingClientRect().top + window.scrollY;
-        const aboutMeTop = aboutMe.getBoundingClientRect().top + window.scrollY;
-        const aboutMeHeight = aboutMe.offsetHeight;
-        // Центр блока aboutMe минус текущая позиция фото и половина высоты фото
-        const targetY = (aboutMeTop + aboutMeHeight / 2) - photoTop - photo.offsetHeight / 2.6;
-        return targetY;
-      },
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.home',
-        start: 'top top',
-        endTrigger: aboutMe,
-        end: 'top top',
-        scrub: true,
-      }
-    });
-  }
-});
+
 
 /* NAV MENU */
 const menuToggle = $('#navMenuWrapperToggle');
