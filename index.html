@@ -8,7 +8,7 @@
 	<meta name="author" content="exdesy.design@gmail.com">
 	<meta name="robots" content="index.follow">
 	<meta name="revised" content="Monday, March, 06, 2023, 19:03">
-	<meta name="vierport" content="width=device=width, initial scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
 	<meta http-equiv="refresh" content="300; URL=index.html">
 
@@ -17,16 +17,20 @@
   <!-- ------------------------------  LIBRARY  ------------------------------ -->	
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- ------------------------------  STYLES  ------------------------------ -->
 	<link href="css/scroll-colors-style.css" rel="stylesheet" type="text/css"/>
-	<link href="css/menu-container-style.css" rel="stylesheet" type="text/css"/>
 	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<link href="css/home.css" rel="stylesheet" type="text/css"/>
+	<link href="css/about-me.css" rel="stylesheet" type="text/css"/>
+	<link href="css/awards.css" rel="stylesheet" type="text/css"/>
+	<link href="css/works.css" rel="stylesheet" type="text/css"/>
+	<link href="css/insights.css" rel="stylesheet" type="text/css"/>
+	
 	<script type="module" src="js/scroll-colors.js"></script>
-	<script type="module" src="js/main-container.js"></script>
-	<script type="module" src="js/nav-container.js"></script>
+	<script type="text/javascript" src="js/main-container.js" defer></script>
+	<script type="text/javascript" src="js/nav-container.js" defer></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -34,10 +38,12 @@
 			<header>
 				<nav>
 					<div class="nav-menu">
-						<a href="index.html">eXdesy</a></li>
+						<a href="index.html">eXdesy</a>
+
 						<div class="nav-menu-wrapper">
 							<button id="temaToggle" class="theme-toggle-button">☀️</button>
-							<button class="nav-menu-wrapper-button">
+							
+							<button class="nav-menu-wrapper-button" onclick="scrollToTalk()">
 								<div class="nav-menu-wrapper-button-text">LETS TALK ;)</div>
 								<div class="nav-menu-wrapper-button-letters">
 									<span>L</span>
@@ -51,12 +57,14 @@
 									<span>K</span>
 								</div>
 							</button>
+
 							<div class="nav-menu-wrapper-toggle" id="navMenuWrapperToggle">
 								<span class="nav-menu-wrapper-toggle-bar top"></span>
 								<span class="nav-menu-wrapper-toggle-bar middle"></span>
 								<span class="nav-menu-wrapper-toggle-bar bottom"></span>
 							</div>
 						</div>
+
 					</div>
 				</nav>
 				<div class="nav-menu-content">
@@ -70,6 +78,7 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
+
 						<li>
 							<a href="#aboutMe">
 								<span class="nav-menu-content-list-left">
@@ -79,6 +88,7 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
+
 						<li>
 							<a href="#works">
 								<span class="nav-menu-content-list-left">
@@ -88,6 +98,7 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
+						
 						<li>
 							<a href="#insights">
 								<span class="nav-menu-content-list-left">
@@ -102,15 +113,17 @@
 				<div class="nav-menu-content-overlay"></div>
 			</header>
 			<main>
+
 				<div class="home" id="home">
 					<div class="home-title">
-						<h1 class="home-title-text">eXdesy</h1>
-						<h2 class="home-title-subtext">Future from the past</h2>
+						<h1>eXdesy</h1>
+						<h2>Future from the past</h2>
 					</div>
 					<div class="home-photo">
 						<img src="img/hero.PNG" alt="Main photo 1">
 					</div>
 				</div>
+
 				<div class="aboutMe" id="aboutMe">
 					<div class="aboutMe-title">
 						<h2>About Me.</h2>
@@ -118,8 +131,9 @@
 					</div>
 					<div class="aboutMe-content"></div>
 				</div>
-				<div class="logos">
-				</div>
+
+				<div class="logos"></div>
+
 				<div class="awards">
 					<div class="awards-title">
 						<h2>Awards & Studies.</h2>
@@ -129,30 +143,34 @@
 					</div>
 					<div class="awards-content"></div>
 				</div>
+
 				<div class="works" id="works">
 					<div class="works-title">
 						<div class="works-title-left">
 							<h2>Selected Works.</h2>
 							<span class="works-title-index">(03)</span>	
 						</div>
-						<a href="https://github.com/eXdesy" class="works-title-arrow">View All Works →</a>
+						<a href="https://github.com/eXdesy" class="works-title-arrow">All Works →</a>
 					</div>
 					<div class="works-content"></div>
 				</div>
+
 				<div class="opinions">
 					<div class="opinion-quote" id="opinionQuote"></div>
 					<div class="opinions-slider" id="opinionsSlider"></div>
 				</div>
+
 				<div class="insights" id="insights">
 					<div class="insights-title">
 						<div class="insights-title-left">
 							<h2>Insights.</h2>
 							<span class="insights-title-index">(04)</span>	
 						</div>
-						<a href="https://github.com/eXdesy" class="insights-title-arrow">View All Insights →</a>
+						<a href="https://github.com/eXdesy" class="insights-title-arrow">All Insights →</a>
 					</div>
 					<div class="insights-content"></div>
 				</div>
+
 				<div class="scroller">
 					<section class="scroll fluid">
 						<h2>eXdesy can&nbsp;</h2>
@@ -170,17 +188,23 @@
 						</ul>
 					</section>
 					<section>
-						<h2 class="fluid">Contact :)</h2>
+						<form class="form" id="talk">
+							<div class="title">LETS TALK ;)</div>
+							<input type="text" placeholder="Your email" class="input">
+							<textarea placeholder="Your message"></textarea>
+							<button>Submit</button>
+					</form>
 					</section>
 				</div>
+
 			</main>
 			<footer>
 				<div class="footer" id="footer">
 					<ul>
 						<h2>Network</h2>
-						<a href="https://www.instagram.com/exdesy.design/"><img src="../img/instagram.png" alt="Instagram"> Instagram</p></a>
-						<a href="https://github.com/eXdesy"><img src="../img/github.png" alt="GiHub"> GiHub</p></a>
-						<a href="https://www.behance.net/exdesydesign"><img src="../img/behance.png" alt="Behance"> Behance</p></a>
+						<a href="https://www.instagram.com/exdesy.design/"><img src="/img/instagram.png" alt="Instagram"> Instagram</p></a>
+						<a href="https://github.com/eXdesy"><img src="/img/github.png" alt="GiHub"> GiHub</p></a>
+						<a href="https://www.behance.net/exdesydesign"><img src="/img/behance.png" alt="Behance"> Behance</p></a>
 					</ul>
 					<ul>
 						<h2>Contact</h2>

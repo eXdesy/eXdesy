@@ -5,13 +5,13 @@
 			<link>https://github.com/eXdesy</link>
 			<photo>img/insight/insight1.jpg</photo>
     </insight>
-    <insight>
+		<insight>
 			<title>Title 2</title>
 			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
 			<link>https://github.com/eXdesy</link>
 			<photo>img/insight/insight2.jpg</photo>
     </insight>
-    <insight>
+		<insight>
 			<title>Title 3</title>
 			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
 			<link>https://github.com/eXdesy</link>
@@ -22,11 +22,5 @@
 			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
 			<link>https://github.com/eXdesy</link>
 			<photo>img/insight/insight4.jpg</photo>
-    </insight>
-		<insight>
-			<title>Title 5</title>
-			<description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</description>
-			<link>https://github.com/eXdesy</link>
-			<photo>img/insight/insight5.jpg</photo>
     </insight>
 </insights>

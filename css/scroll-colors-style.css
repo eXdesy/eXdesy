@@ -64,12 +64,6 @@
     --lightness: 65%;
     --base-chroma: 0.3;
   }
-  [data-theme='dark'] {
-    --lightness: 75%;
-  }
-  [data-theme='light'] {
-    --lightness: 65%;
-  }
   .scroll ul {
     --step: calc((var(--end) - var(--start)) / (var(--count) - 1));
   }

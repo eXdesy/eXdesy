@@ -1,0 +1,258 @@
+.works {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: inherit;
+
+	margin: auto;
+	min-height: 100vh;
+	width: 100%;
+	padding-block: var(--padding-size);
+	font-size: var(--font-size);
+	gap: calc(var(--index) * 1.5);
+}
+.works-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.works-title-left {
+	display: flex;
+	flex-direction: row;
+}
+.works-title-left h2 {
+	font-size: 3em;
+}
+.works-title-index {
+	color: var(--grey-color);
+
+	font-size: 1.5em;
+}
+.works-title-arrow {
+	display: flex;
+  align-items: center;
+	text-align: center;
+  justify-content: center;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	cursor: pointer;
+	font-family: outfit;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--grey-color);
+
+	font-size: 1.5em;
+	border-radius: 50px;
+	padding: 1rem 2rem;
+}
+.works-title-arrow:hover {
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+.works-title-arrow:active {
+	transform: var(--transform-scale);
+}
+.works-content {
+	display: flex;
+	flex-direction: column;
+
+	gap: 20px;
+}
+.works-content-description {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 90vw;
+	gap: 20px;
+	padding-bottom: 50px;
+}
+.works-content-photo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: var(--grey-color);
+	
+	width: 90vw;
+	height: 70vh;
+	border-radius: 20px;
+}
+.works-content-description-text {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	gap: 10px;
+}
+.works-content-description-text h2 {
+	font-size: 1.5em;
+}
+.works-content-description-text p {
+	font-size: 1em;
+}
+.works-content-description-button {
+	display: flex;
+  align-items: center;
+	text-align: center;
+  justify-content: center;
+	border: 2px solid var(--grey-color);
+	background-color: var(--white-color);
+	color: var(--black-color);
+	cursor: pointer;
+	font-family: outfit;
+  transition: transform 0.3s ease;
+
+	font-size: 1.5em;
+	width: 100px;
+  height: 50px;
+	border-radius: 50px;
+	padding: 1rem 2rem;
+}
+.works-content-description-button:hover {
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+.works-content-description-button:active {
+	transform: var(--transform-scale);
+}
+
+/* OPINIONS STYLE */
+.opinions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+  overflow: hidden;
+  color: var(--white-color);
+
+	margin: auto;
+	width: 100%;
+	padding-block: var(--padding-size);
+	gap: calc(var(--index) * 2);
+}
+.opinion-quote {
+	text-align: center;
+  transition: opacity 0.4s ease;
+
+	font-size: 1.5em;
+  min-height: 15vh;
+	max-width: 80vw;
+}
+.opinions-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+	gap: calc(var(--index) * 3);
+  width: 100%;
+  max-width: 50vw;
+}
+.opinion-card {
+  text-align: center;
+	cursor: pointer;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: var(--transform-scale);
+	opacity: 0.5;
+
+	flex: 0 0 200px;
+}
+.opinion-card.active {
+	transform: var(--transform-scale);
+	opacity: 1;
+}
+.opinion-card img {
+	object-fit: cover;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.opinion-card h2 {
+	font-size: 2em;
+}
+.opinion-card p {
+  color: var(--grey-color);
+
+	font-size: 1.5em;
+}
+
+@media (max-width: 1080px) {
+	.works-content-description {
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.works-content-photo {
+		height: 50vh;
+		border-radius: 20px;
+	}
+	.works-content-description {
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 50px;
+	}
+	.works-content-description-text h2 {
+		font-size: 2em;
+	}
+	.works-content-description-text p {
+		font-size: 1.5em;
+	}
+	.works-content-description-button {
+		width: 100%;
+		height: 70px;
+	}
+	.opinion-quote {
+		font-size: 2.5em;
+	}
+	.opinions-slider {	
+		gap: 100px;
+	}
+	.opinion-card img {
+		width: 200px;
+		height: 200px;
+	}
+}
+@media (max-width: 480px) {
+	.works-title {
+		width: 100%;
+		gap: 10px;
+	}
+	.works-title-left {
+		margin: auto;
+	}
+	.works-title-arrow {
+		width: 55%;
+		height: 40px;
+	}
+	.works-content-description {
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.works-content-photo {
+		height: 50vh;
+		border-radius: 20px;
+	}
+	.works-content-description-text h2 {
+		font-size: 2em;
+	}
+	.works-content-description-text p {
+		font-size: 1.5em;
+	}
+	.works-content-description-button {
+		width: 100%;
+		height: 40px;
+	}
+	.opinion-quote {
+		font-size: 1em;
+	}
+	.opinions-slider {	
+		gap: 0;
+	}
+}
