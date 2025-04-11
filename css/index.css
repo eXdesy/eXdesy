@@ -35,13 +35,16 @@ img {
 }
 /* ------------------------------  VARIABLES  ------------------------------ */
 :root {
-	--index: calc(1vw + 1vh);
 	--white-color: #e7e7e0;
 	--grey-color: #9a9a9a;
 	--black-color: #2d2d2d;
 	--invert-color: brightness(0) invert(1);
-	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
-	--gallery-gap: calc(var(--index) * 7.5)
+
+	--index: calc(1vw + 1vh);
+	--font-size: calc(var(--index) * 1);
+	--transform-scale: scale(0.96);
+
+	--padding-size: calc(var(--index) * 4);	
 }
 .wrapper {
 	min-height: 100vh;
@@ -71,58 +74,67 @@ body {
 	font-family: raleway;
 	color: var(--white-color);
 	background-color: var(--black-color);
+	line-height: 1.5;
+	width: 100%;
 }
 /* ------------------------------  HEADER...  ------------------------------ */
 nav{
-	position: fixed;
-	width: 90vw;
-	top: 0;
-  padding: calc(var(--index) * 1.5);
-	z-index: 1200;
-  display: flex;
+	display: flex;
   justify-content: center;
   text-align: center;
+	color: inherit;
+	position: fixed;
+	z-index: 1200;
+
+	width: 90vw;
+	top: 0;
+  padding-block: calc(var(--index) * 1.5);
+	font-size: var(--font-size);
 }
 .nav-menu {
-	width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+	width: 100%;
 }
 .nav-menu a {
-	font-size: calc(var(--index) * 2);
-	font-weight: 900;
 	transition: color 0.3s ease;
 	color: inherit;
+	font-weight: 900;
+
+	font-size: 2em;
 }
 /* NAV MENU WRPPER STYLE */
 .nav-menu-wrapper {
   display: flex;
+	flex-direction: row;
   align-items: center;
   justify-content: center;
-	gap: 40px;
-	color: inherit;
+
+	gap: 50px;
 }
 .nav-menu-wrapper-button {
+	position: relative;
+  text-transform: uppercase;
 	background: var(--black-color);
 	color: var(--white-color);
   cursor: pointer;
-  border-radius: 50px;
   display: block;
+	overflow: hidden;
   font-weight: 900;
-  overflow: hidden;
+	
   padding: 1rem 2rem;
-  position: relative;
-  text-transform: uppercase;
+	border-radius: 50px;
 }
 .nav-menu-wrapper-button .nav-menu-wrapper-button-text {
   background: var(--white-color);
   color: var(--black-color);
   display: grid;
-  inset: 0;
   place-content: center;
   position: absolute;
   transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+	inset: 0;
 }
 .nav-menu-wrapper-button:hover .nav-menu-wrapper-button-text {
   transform: translateY(100%);
@@ -150,27 +162,30 @@ nav{
 .nav-menu-wrapper-button:hover span:nth-child(7) {transition-delay: 0.6s;}
 .nav-menu-wrapper-button:hover span:nth-child(8) {transition-delay: 0.7s;}
 .nav-menu-wrapper-button:hover span:nth-child(9) {transition-delay: 0.8s;}
+
 /* NAV MENU WRPPER TOGGLE STYLE */
 .nav-menu-wrapper-toggle {
-  width: 40px;
-  height: 40px;
-	border-radius: 25px;
 	background: var(--black-color);
   cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
   flex-shrink: 0;
-	transform: rotate(-45deg)
+	transform: rotate(-45deg);
+	width: 40px;
+  height: 40px;
+	border-radius: 25px;
 }
 .nav-menu-wrapper-toggle .nav-menu-wrapper-toggle-bar {
   position: absolute;
-  height: 4px;
   background: var(--white-color);
-  border-radius: 2px;
-  transition: all 0.3s ease;
   transform-origin: center center;
+  transition: all 0.3s ease;
+
+	border-radius: 2px;
+	height: 4px;
 }
 .nav-menu-wrapper-toggle .nav-menu-wrapper-toggle-bar.top {
   width: 20px;
@@ -184,30 +199,31 @@ nav{
   width: 20px;
   transform: translateY(10px);
 }
+
 /* NAV MENU CONTENT STYLE */
 .nav-menu-content {
-  position: fixed;
-  top: var(--nav-height, 120px);
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-	margin: auto;
-  z-index: 1000;
-  opacity: 0;
   visibility: hidden;
 	color: var(--white-color);
   transition: all 0.3s ease;
+	border-block: 1px solid var(--grey-color);
+	position: fixed;
+	z-index: 1000;
+  opacity: 0;
+
+	top: var(--nav-height, 120px);
+  left: 0;
+  right: 0;
 	width: 90vw;
-	border-bottom: 1px solid var(--grey-color);
-  border-top: 1px solid var(--grey-color);
-	padding-top: 20px;
+	margin: auto;
 }
 .nav-menu-content-list {
-  width: 100%;
   display: flex;
   flex-direction: column;
+
+	width: 100%;
   gap: 20px;
 }
 .nav-menu-content-list li {
@@ -222,53 +238,56 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
-  transition: all 0.2s ease;
 	cursor: pointer;
+  transition: all 0.2s ease;
+	margin: auto;
 }
 .nav-menu-content-list li .nav-menu-content-list-left {
   display: inline-flex;
   align-items: baseline;
-  gap: 5px;
+
+  gap: 10px;
 }
 .nav-menu-content-list .nav-menu-content-list-left-text {
-  font-size: 3rem;
-  font-weight: 700;
 	color: var(--black-color);
+  font-weight: 700;
+
+  font-size: 3rem;
 }
 .nav-menu-content-list .nav-menu-content-list-left-index {
-  margin-left: 10px;
-  font-size: 1.1rem;
-  font-weight: 400;
 	color: var(--grey-color);
+
+  font-size: 1.5em;
 }
 .nav-menu-content-list .nav-menu-content-list-arrow {
-  font-size: 1.5rem;
-  border: 1px solid var(--grey-color);
-	color: var(--black-color);
-  border-radius: 999px;
-  width: 45px;
-  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease;
+	color: var(--black-color);
+	border: 2px solid var(--grey-color);
+  transition: transform 0.3s ease;
+
+	border-radius: 999px;
+  width: 45px;
+  height: 45px;
+	font-size: 1.5em;
 }
 /* NAV MENU CONTENT OVERLAY STYLE */
 .nav-menu-content-overlay {
   position: fixed;
-  inset: 0;
   background: var(--white-color);
-  z-index: 900;
-  opacity: 0;
   pointer-events: none;
-  transition: background 0.2s ease;
+  transition: background 0.3s ease;
+
+	z-index: 900;
+  inset: 0;
+  opacity: 0;
 }
 .nav-menu-content-overlay-scroll {
   overflow: hidden;
+
   height: 100vh;
 }
-
 
 body.overlay-open .nav-menu a {
 	color: var(--black-color);
@@ -284,43 +303,62 @@ body.overlay-open .nav-menu-wrapper-button-text {
 .theme-toggle-button {
   background: transparent;
   border: none;
-  font-size: calc(var(--index) * 1.5);
   cursor: pointer;
   color: var(--white-color);
   transition: transform 0.2s ease, color 0.3s ease;
+
+	font-size: 1.5em;
 }
 .theme-toggle-button:hover {
-  transform: scale(1.1);
+  transform: var(--transform-scale);
 }
 /* ------------------------------  FOOTER...  ------------------------------ */
 .footer {
   display: flex;
+	flex-wrap: wrap;
   position: relative;
   justify-content: space-around;
-  line-height: 2;
+	color: inherit;
+
+	font-size: var(--font-size);
+	line-height: 2;
 	margin-top: 20vh;
-	color: var(--white-color);
 }
 .footer h2 {
 	text-transform: uppercase;
-	font-size: calc(var(--index) * 1.5);
+	font-size: 2em;
 }
 .footer ul, .footer a {
-	font-size: calc(var(--index) * 1);
 	color: inherit;
+
+	font-size: 1em;
 }
 .footer img {
-  width: calc(var(--index) * 1);
 	vertical-align: unset;
+
+	width: calc(var(--index) * 1);
 }
 .copyright {
-	padding: 5vh;
 	text-align: center;
-	color: var(--white-color);
+	
+	padding: 5vh;
 }
 .copyright a {
-	opacity: .45;
-	font-size: calc(var(--index) * 1);
-	letter-spacing: calc(var(--index) / 37);
-	color: inherit;
+	color: var(--grey-color);
+
+	font-size: 1em;
+}
+
+
+@media (max-width: 480px) {
+	:root {	
+		--padding-size: calc(var(--index) * 3);	
+	}
+	.nav-menu-wrapper {	
+		gap: 10px;
+	}
+	.nav-menu-wrapper-button {
+		width: 100%;
+		height: 30px;
+	}
 }

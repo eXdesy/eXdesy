@@ -8,7 +8,6 @@ let chromaExit;
 const config = {
   theme: 'dark',
   animate: true,
-  snap: true,
   start: gsap.utils.random(0, 100, 1),
   end: gsap.utils.random(900, 1000, 1),
   scroll: true,
@@ -18,7 +17,6 @@ const update = () => {
   document.documentElement.dataset.theme = config.theme;
   document.documentElement.dataset.syncScrollbar = config.scroll;
   document.documentElement.dataset.animate = config.animate;
-  document.documentElement.dataset.snap = config.snap;
   document.documentElement.dataset.debug = config.debug;
   document.documentElement.style.setProperty('--start', config.start);
   document.documentElement.style.setProperty('--hue', config.start);
@@ -110,25 +108,5 @@ if (!CSS.supports('(animation-timeline: scroll()) and (animation-range: 0% 100%)
     }
   );
 }
-
-const themeToggleBtn = document.getElementById("temaToggle");
-let isDark = true;
-themeToggleBtn.addEventListener("click", () => {
-  const root = document.documentElement;
-  if (isDark) {
-		document.body.style.backgroundImage = "url('img/bgWhite.png')";
-		root.style.setProperty('--white-color', '#2d2d2d');
-    root.style.setProperty('--black-color', '#e7e7e0');
-    root.style.setProperty('--invert-color', 'brightness(0) invert(0)');
-    themeToggleBtn.textContent = '🌙';
-  } else {
-		document.body.style.backgroundImage = "url('img/bg.png')";
-		root.style.setProperty('--white-color', '#e7e7e0');
-    root.style.setProperty('--black-color', '#2d2d2d');
-    root.style.setProperty('--invert-color', 'brightness(0) invert(1)');
-    themeToggleBtn.textContent = '☀️';
-  }
-  isDark = !isDark;
-});
 
 update()
