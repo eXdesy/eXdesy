@@ -1,37 +1,37 @@
 <opinions>
   <opinion>
-    <name>Name 1</name>
+    <name>Ramon Galdon Frasquet</name>
     <role>Cool Role</role>
-    <photo>img/people/people1.png</photo>
+    <photo>img/people/frasquet.jpeg</photo>
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
-		<link>https://www.linkedin.com/in/itsdilior/</link>
+		<link>https://www.linkedin.com/in/ram%C3%B3n-gald%C3%B3n-frasquet-91224682/</link>
   </opinion>
   <opinion>
-    <name>Name 2</name>
+    <name>Joaquin Borrego Fernandez</name>
     <role>Cool Role</role>
-    <photo>img/people/people2.png</photo>
+    <photo>img/people/juakylc.jpeg</photo>
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
-		<link>https://www.linkedin.com/in/itsdilior/</link>
+		<link>https://www.linkedin.com/in/juakylc/</link>
   </opinion>
   <opinion>
-    <name>Name 3</name>
+    <name>Rafael Mancina Castro</name>
     <role>Cool Role</role>
-    <photo>img/people/people3.png</photo>
+    <photo>img/people/rafamancina.jpeg</photo>
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
-		<link>https://www.linkedin.com/in/itsdilior/</link>
+		<link>https://www.linkedin.com/in/rafamancina/</link>
   </opinion>
   <opinion>
-    <name>Name 4</name>
+    <name>Jose Carlos Moreno Martin</name>
     <role>Cool Role</role>
-    <photo>img/people/people4.png</photo>
+    <photo>img/people/josecarlosmorenomartin.jpeg</photo>
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
-		<link>https://www.linkedin.com/in/itsdilior/</link>
+		<link>https://www.linkedin.com/in/josecarlosmorenomartin/</link>
   </opinion>
   <opinion>
-    <name>Name 5</name>
+    <name>Lody Iaremko</name>
     <role>Cool Role</role>
-    <photo>img/people/people5.png</photo>
+    <photo>img/people/lody-dev.jpeg</photo>
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
-		<link>https://www.linkedin.com/in/itsdilior/</link>
+		<link>https://www.linkedin.com/in/lody-dev/</link>
   </opinion>
 </opinions>

@@ -235,8 +235,8 @@ loadInsightsFromXML("xml/insights.xml");
 /* OPINIONS CONTAINER LOADER */
 let currentIndex = 2;
 let opinions = [];
-const quoteEl = document.getElementById("opinionQuote");
 const slider = document.getElementById("opinionsSlider");
+const quoteEl = document.getElementById("opinionQuote");
 
 async function loadOpinionsFromXML(url) {
   const response = await fetch(url);

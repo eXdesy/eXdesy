@@ -65,7 +65,7 @@ main {
 	flex: 1 1 auto;
 }
 body {
-	background-image: url(../img/bg.png);
+	background-image: url(../img/bgBlack.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -114,6 +114,20 @@ nav{
 
 	gap: 50px;
 }
+
+.theme-toggle-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: transform 0.2s ease, color 0.3s ease;
+
+	font-size: 1.5em;
+}
+.theme-toggle-button:hover {
+  transform: var(--transform-scale);
+}
+
 .nav-menu-wrapper-button {
 	position: relative;
   text-transform: uppercase;
@@ -272,6 +286,7 @@ nav{
   height: 45px;
 	font-size: 1.5em;
 }
+
 /* NAV MENU CONTENT OVERLAY STYLE */
 .nav-menu-content-overlay {
   position: fixed;
@@ -298,19 +313,6 @@ body.overlay-open .nav-menu-content {
 body.overlay-open .nav-menu-wrapper-button-text {
 	background: var(--black-color);
 	color: var(--white-color);
-}
-
-.theme-toggle-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-  transition: transform 0.2s ease, color 0.3s ease;
-
-	font-size: 1.5em;
-}
-.theme-toggle-button:hover {
-  transform: var(--transform-scale);
 }
 /* ------------------------------  FOOTER...  ------------------------------ */
 .footer {
