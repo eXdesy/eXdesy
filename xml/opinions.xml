@@ -6,6 +6,13 @@
 		<quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit nam exercitationem? Magni, necessitatibus quasi quae eum iusto ipsum in illum optio aperiam libero adipisci ad. Corporis porro debitis quia.</quote>
 		<link>https://www.linkedin.com/in/ram%C3%B3n-gald%C3%B3n-frasquet-91224682/</link>
   </opinion>
+	<opinion>
+    <name>Francisco Javier Olías Morales</name>
+    <role>Classmate</role>
+    <photo>img/people/francisco.jpeg</photo>
+		<quote>Dilior was my classmate in the advanced degree program for cross-platform application development. He is undoubtedly a very good person, hard-working and proactive.</quote>
+		<link>https://www.linkedin.com/in/francisco-javier-ol%C3%ADas-morales-25a085243/</link>
+  </opinion>
   <opinion>
     <name>Joaquin Borrego Fernandez</name>
     <role>Cool Role</role>
