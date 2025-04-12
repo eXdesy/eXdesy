@@ -11,10 +11,4 @@
 			<link>https://github.com/eXdesy/DeepWay</link>
 			<photo>img/work/work2.jpg</photo>
     </work>
-		<work>
-			<title>UDP Server - Client</title>
-			<description>This project is JavaFX-based server that uses the UDP protocol to receive messages and images between different clients and forward them.</description>
-			<link>https://github.com/eXdesy/UDPServerClient</link>
-			<photo>img/work/work3.jpg</photo>
-    </work>
 </works>
