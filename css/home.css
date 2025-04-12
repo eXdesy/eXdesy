@@ -39,6 +39,9 @@
 	height: auto;
 }
 
+#talk {
+	padding-block: calc(var(--padding-size) * 1);
+}
 .form {
   position: relative;
   display: flex;
@@ -107,6 +110,9 @@
 	}
 }
 @media (max-width: 480px) {
+	.home-title {
+		padding-inline: calc(var(--padding-size) / 2);
+	}
   .home-photo {
 		left: 35vw;
 		top: 15vh;

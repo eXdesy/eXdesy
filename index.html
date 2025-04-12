@@ -20,7 +20,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- ------------------------------  STYLES  ------------------------------ -->
-	<link href="css/scroll-colors-style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/scroll-colors.css" rel="stylesheet" type="text/css"/>
 	<link href="css/index.css" rel="stylesheet" type="text/css"/>
 	<link href="css/home.css" rel="stylesheet" type="text/css"/>
 	<link href="css/about-me.css" rel="stylesheet" type="text/css"/>
@@ -39,10 +39,8 @@
 				<nav>
 					<div class="nav-menu">
 						<a href="index.html">eXdesy</a>
-
 						<div class="nav-menu-wrapper">
 							<button id="temaToggle" class="theme-toggle-button">☀️</button>
-							
 							<button class="nav-menu-wrapper-button" onclick="scrollToTalk()">
 								<div class="nav-menu-wrapper-button-text">LETS TALK ;)</div>
 								<div class="nav-menu-wrapper-button-letters">
@@ -57,14 +55,12 @@
 									<span>K</span>
 								</div>
 							</button>
-
 							<div class="nav-menu-wrapper-toggle" id="navMenuWrapperToggle">
 								<span class="nav-menu-wrapper-toggle-bar top"></span>
 								<span class="nav-menu-wrapper-toggle-bar middle"></span>
 								<span class="nav-menu-wrapper-toggle-bar bottom"></span>
 							</div>
 						</div>
-
 					</div>
 				</nav>
 				<div class="nav-menu-content">
@@ -78,7 +74,6 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="#aboutMe">
 								<span class="nav-menu-content-list-left">
@@ -88,7 +83,6 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="#works">
 								<span class="nav-menu-content-list-left">
@@ -98,7 +92,6 @@
 								<span class="nav-menu-content-list-arrow">→</span>
 							</a>
 						</li>
-						
 						<li>
 							<a href="#insights">
 								<span class="nav-menu-content-list-left">
@@ -147,7 +140,7 @@
 				<div class="works" id="works">
 					<div class="works-title">
 						<div class="works-title-left">
-							<h2>Selected Works.</h2>
+							<h2>Lastest Works.</h2>
 							<span class="works-title-index">(03)</span>	
 						</div>
 						<a href="https://github.com/eXdesy" class="works-title-arrow">All Works →</a>
@@ -187,13 +180,13 @@
 							<li style="--i: 9">do it.</li>
 						</ul>
 					</section>
-					<section>
-						<form class="form" id="talk">
+					<section id="talk">
+						<form class="form" id="talkForm">
 							<div class="title">LETS TALK ;)</div>
-							<input type="text" placeholder="Your email" class="input">
-							<textarea placeholder="Your message"></textarea>
-							<button>Submit</button>
-					</form>
+							<input type="email" name="email" placeholder="Your email" class="input" required>
+							<textarea name="message" placeholder="Your message" required></textarea>
+							<button type="submit">Submit</button>
+						</form>
 					</section>
 				</div>
 
